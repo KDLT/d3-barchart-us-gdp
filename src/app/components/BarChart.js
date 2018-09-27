@@ -7,7 +7,7 @@ class BarChart extends Component {
   }
   render() {
     return(
-      <h1>Hello BarChart</h1>
+      <h1>Hello BarChart TESTESTEST</h1>
     )
   };
 };
