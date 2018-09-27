@@ -1,3 +1,36 @@
+svg {
+  background: white;
+  position: relative; }
+
+rect {
+  fill: #65b6b8; }
+
+rect:hover {
+  fill: rgba(101, 182, 184, 0.7); }
+
 body {
-  background: black;
-  color: white; }
+  background: #e6b7e6;
+  /* Old Browsers */
+  background: -moz-linear-gradient(top, #e6b7e6 0%, #c7cbf0 50%, #d5efd1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #e6b7e6), color-stop(50%, #c7cbf0), color-stop(100%, #d5efd1));
+  /* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(top, #e6b7e6 0%, #c7cbf0 50%, #d5efd1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e6b7e6 0%, #c7cbf0 50%, #d5efd1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e6b7e6 0%, #c7cbf0 50%, #d5efd1 100%);
+  /* IE 10+ */
+  background: linear-gradient(to bottom, #e6b7e6 0%, #c7cbf0 50%, #d5efd1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6b5e6', endColorstr='#d7f0d3', GradientType=0);
+  /* IE6-9 */
+  font-family: "trebuchet ms", monospace, sans-serif;
+  text-align: center; }
+
+#tooltip {
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 5px;
+  width: 40px;
+  height: 20px;
+  opacity: 0; }

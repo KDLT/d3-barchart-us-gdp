@@ -1,0 +1,14 @@
+svg {
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+rect {
+  fill: hsl(182, 37%, 56%);
+}
+
+rect:hover {
+  fill: hsla(182, 37%, 56%, 0.7);
+}

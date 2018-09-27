@@ -6,7 +6,7 @@ import "./styles/main.scss";
 class App extends Component {
   render() {
     return (
-      <div class="main-container">
+      <div className="main-container">
         <BarChart />
       </div>
     );
