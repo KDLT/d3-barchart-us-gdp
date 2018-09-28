@@ -1,6 +1,8 @@
 svg {
   background: white;
-  position: relative; }
+  position: relative;
+  border-radius: 10px;
+  padding-left: 20px; }
 
 rect {
   fill: #65b6b8; }
@@ -29,8 +31,12 @@ body {
   text-align: center; }
 
 #tooltip {
+  text-align: left;
+  color: white;
+  padding: 5px 10px;
   background: rgba(0, 0, 0, 0.61);
+  position: absolute;
   border-radius: 5px;
-  width: 40px;
-  height: 20px;
+  width: 105px;
+  height: 40px;
   opacity: 0; }

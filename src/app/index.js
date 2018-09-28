@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="main-container">
+      <h1>US Quarterly GDP in Billions of Dollars</h1>
         <BarChart />
       </div>
     );

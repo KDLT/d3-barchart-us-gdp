@@ -1,24 +1,14 @@
 @import 'svg';
 
 body {
-  // background-color: rgba(230, 181, 230, 1);
-  // color: white;
-  background: hsl(300, 49%, 81%);
-  /* Old Browsers */
-  background: -moz-linear-gradient(top, hsl(300, 49%, 81%) 0%, hsl(234, 57%, 86%) 50%, hsl(112, 49%, 88%) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, hsl(300, 49%, 81%)), color-stop(50%, hsl(234, 57%, 86%)), color-stop(100%, hsl(112, 49%, 88%)));
-  /* Chrome, Safari4+ */
-  background: -webkit-linear-gradient(top, hsl(300, 49%, 81%) 0%, hsl(234, 57%, 86%) 50%, hsl(112, 49%, 88%) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, hsl(300, 49%, 81%) 0%, hsl(234, 57%, 86%) 50%, hsl(112, 49%, 88%) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, hsl(300, 49%, 81%) 0%, hsl(234, 57%, 86%) 50%, hsl(112, 49%, 88%) 100%);
-  /* IE 10+ */
-  background: linear-gradient(to bottom, hsl(300, 49%, 81%) 0%, hsl(234, 57%, 86%) 50%, hsl(112, 49%, 88%) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6b5e6', endColorstr='#d7f0d3', GradientType=0);
-  /* IE6-9 */
+  background : -moz-radial-gradient(50% 50%, circle farthest-corner, rgba(255, 255, 255, 1) 0%, rgba(204, 196, 203, 1) 100%);
+  background : -webkit-radial-gradient(50% 50%, circle farthest-corner, rgba(255, 255, 255, 1) 0%, rgba(204, 196, 203, 1) 100%);
+  background : -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 1562.09, color-stop(0, rgba(255, 255, 255, 1)), color-stop(1, rgba(204, 196, 203, 1)));
+  background : -o-radial-gradient(50% 50%, circle farthest-corner, rgba(255, 255, 255, 1) 0%, rgba(204, 196, 203, 1) 100%);
+  background : -ms-radial-gradient(50% 50%, circle farthest-corner, rgba(255, 255, 255, 1) 0%, rgba(204, 196, 203, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Stlye=2);";
+  background : radial-gradient(50% 50%, circle farthest-corner, rgba(255, 255, 255, 1) 0%, rgba(204, 196, 203, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Stlye=2);
   font-family: "trebuchet ms", monospace, sans-serif;
   text-align: center;
 };

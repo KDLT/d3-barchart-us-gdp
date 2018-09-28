@@ -2,7 +2,8 @@ svg {
   background: white;
   position: relative;
   border-radius: 10px;
-  padding-left: 20px;
+  padding-left: 50px;
+  overflow: visible;
 }
 
 rect {
@@ -11,4 +12,14 @@ rect {
 
 rect:hover {
   fill: hsla(182, 37%, 56%, 0.7);
+}
+
+#x-axis-label {
+  font-size: 20px;
+  text-anchor: middle;
+}
+
+#y-axis-label {
+  font-size: 20px;
+  text-anchor: middle;
 }

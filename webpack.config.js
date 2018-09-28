@@ -1,22 +1,24 @@
-const path = require("path");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const htmlwp = require("html-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const htmlwp = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const htmlWebpackPlugin = new htmlwp({
-  template: "./src/index.html",
-  filename: "./index.html" // (output directory) no need to put dist
+  // title: 'US GDP in Billions',
+  favicon: './src/app/assets/favicon-slice-plated.ico',
+  template: './src/index.html',
+  filename: './index.html', // (output directory) no need to put dist
 });
 
 const extractPlugin = new ExtractTextPlugin({
-   filename: "main.css"
+   filename: 'main.css'
 });
 
 module.exports = {
-  entry: "./src/app/index.js",
+  entry: './src/app/index.js',
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "docs")
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'docs')
   },
   module: {
     rules: [

@@ -86,10 +86,20 @@ class BarChart extends Component {
       .attr('transform', `translate(0, ${h - padding})`)
       .call(xAxis);
     
+    select(node).append('text')
+      .attr('id', 'x-axis-label')
+      .style('transform', `translate(${w/2}px, ${h-padding/4}px)`)
+      .text('Date')
+    
     select(node).append('g')
       .attr('id', 'y-axis')
       .attr('transform', `translate(${padding}, 0)`)
       .call(yAxis);
+    
+    select(node).append('text')
+      .attr('id', 'y-axis-label')
+      .style('transform', `translate(0px, ${h/2}px) rotate(-90deg)`)
+      .text('USD in Billions')
     
     select(node).append('g')
       .attr('id', 'chart-area')
@@ -106,8 +116,6 @@ class BarChart extends Component {
         .on('mouseover', handleMouseover)
         .on('mousemove', handleMouseMove)
         .on('mouseout', handleMouseOut)
-    
-    select()
   } 
   render() {
     return(
